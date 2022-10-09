@@ -18,5 +18,5 @@
     "editor.formatOnSave": true,
   },
 
-  "zig.buildOnSave": true,
+  "zig.buildOnSave": false,
 }

@@ -12,6 +12,8 @@ pub fn main() !void {
     const reader = file.reader();
 
     const t = std.time.nanoTimestamp();
+    std.debug.print("\nbreaking\n", .{});
+    @breakpoint();
     try parse(allocator, reader);
     std.debug.print("total time: {}\n", .{std.time.nanoTimestamp() - t});
 }
@@ -56,4 +58,14 @@ fn parse(allocator: std.mem.Allocator, reader: std.fs.File.Reader) anyerror!void
             },
         }
     }
+}
+
+// var i: usize = 0;
+// while (i < indent) : (i += 1) std.debug.print(" ", .{});
+// std.debug.print("<start dictionary>\n", .{});
+// indent += 2;
+
+test "basic test" {
+    @breakpoint();
+    try std.testing.expectEqual(10, 3 + 7);
 }

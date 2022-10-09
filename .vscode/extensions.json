@@ -1,6 +1,7 @@
 {
   "recommendations": [
     "AugusteRame.zls-vscode",
+    "vadimcn.vscode-lldb",
     "tiehuis.zig",
   ]
 }
