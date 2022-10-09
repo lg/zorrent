@@ -6,9 +6,7 @@
     {
       "label": "build",
       "type": "shell",
-      //"command": "rm -rf zig-out/ ; zig build",
-      //"command": "rm -rf zig-cache/ zig-out/ && zig build",
-      "command": "zig build",
+      "command": "rm -rf zig-cache/ zig-out/ && zig build", // removing cache required for symbols to work on debugging. use stage1 for const variables to show.
       "group": {
         "kind": "build",
         "isDefault": true
