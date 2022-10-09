@@ -13,10 +13,11 @@ pub fn main() !void {
 
     const t = std.time.nanoTimestamp();
     try parse(allocator, reader);
-    std.debug.print("total time: {}\n", .{std.time.nanoTimestamp() - t});
 
-    // std.debug.print("\nbreaking\n", .{});
-    // @breakpoint();
+    std.debug.print("total timez: {}\n", .{std.time.nanoTimestamp() - t});
+
+    std.debug.print("\nbreakingzs2\n", .{});
+    @breakpoint();
 }
 
 fn parse(allocator: std.mem.Allocator, reader: std.fs.File.Reader) anyerror!void {

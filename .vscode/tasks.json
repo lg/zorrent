@@ -6,11 +6,21 @@
     {
       "label": "build",
       "type": "shell",
-      "command": "rm -rf zig-cache/ zig-out/ && zig build",
+      //"command": "rm -rf zig-out/ ; zig build",
+      //"command": "rm -rf zig-cache/ zig-out/ && zig build",
+      "command": "zig build",
       "group": {
         "kind": "build",
         "isDefault": true
       },
+      "presentation": {
+        "echo": true,
+        "reveal": "silent",
+        "focus": false,
+        "panel": "dedicated",
+        "showReuseMessage": true,
+        "clear": true
+      }
     }
   ]
 }
