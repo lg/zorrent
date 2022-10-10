@@ -12,6 +12,7 @@
       "program": "./zig-out/bin/zorrent",
       "cwd": "${workspaceFolder}",
       "console": "internalConsole",
+      "internalConsoleOptions": "openOnSessionStart"
     },
   ]
 }
